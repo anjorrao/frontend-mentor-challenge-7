@@ -1,0 +1,15 @@
+@import '../base/base';
+@import '../base/breakpoints';
+
+.container {
+	@include media-breakpoint-down(md) { 
+		padding: 70px 15px;
+	}
+
+	@include media-breakpoint-up(md) {
+		display: flex;
+		height: 100vh;
+		align-items: center;
+		justify-content: center;
+	}
+}
